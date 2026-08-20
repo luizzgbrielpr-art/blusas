@@ -316,6 +316,42 @@
             margin-top: 15px;
         }
 
+        .modal-pagamento-box {
+    position: relative;
+}
+
+.btn-x-pagamento {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    background: transparent;
+    color: #555;
+
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.btn-x-pagamento:hover {
+    background: #f0f0f0;
+    color: #000;
+}
+
+
         @media (max-width: 600px) {
 
             .modal-pagamento-box {
@@ -488,7 +524,18 @@
 
     <div class="modal-pagamento-box">
 
-        <h2>Forma de pagamento</h2>
+    <button
+        type="button"
+        class="btn-x-pagamento"
+        onclick="fecharPagamento()"
+        aria-label="Fechar pagamento"
+        title="Fechar">
+
+        &times;
+
+    </button>
+
+    <h2>Forma de pagamento</h2>
 
         <p class="subtitulo-pagamento">
             Escolha uma forma de pagamento para continuar.
